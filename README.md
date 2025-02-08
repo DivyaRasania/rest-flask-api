@@ -42,5 +42,5 @@ To get list of drinks, you can use set method to GET and hit Send
 To add a drink, change method to POST, and body should be raw in JSON format and hit Send
 ![Postman POST Example](screenshots/postman-post.png)
 
-To delete a drink, tweak the URL to <your_url>/<id> change method to DELETE, and hit Send
+To delete a drink, tweak the URL to <your_url>/<id_of_valid_item> change method to DELETE, and hit Send
 ![Postman DELETE Example](screenshots/postman-delete.png)
