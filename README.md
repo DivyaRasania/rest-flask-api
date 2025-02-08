@@ -33,7 +33,7 @@ with app.app_context():
 
 ## Postman
 
-You can also get, add, and delete a new entry using Postman
+You can also get, add, update, and delete a new entry using Postman
 URL will be the link your flask server is running (in my case its localhost:5000/drink)
 
 To get list of drinks, you can use set method to GET and hit Send
@@ -42,5 +42,8 @@ To get list of drinks, you can use set method to GET and hit Send
 To add a drink, change method to POST, and body should be raw in JSON format and hit Send
 ![Postman POST Example](screenshots/postman-post.png)
 
-To delete a drink, tweak the URL to <your_url>/<id_of_valid_item> change method to DELETE, and hit Send
+To update a drink, tweak the URL to <your_url>/<id_assigned_when_created>(if you dont remember the id, check it inside instances/<database_name>.db), change method to PUT, and body should be raw in JSON format and hit Send
+![Postman PUT Example](screenshots/postman-put.png)
+
+To delete a drink, tweak the URL to <your_url>/<id_assigned_when_created>(if you dont remember the id, check it inside instances/<database_name>.db), change method to DELETE, and hit Send
 ![Postman DELETE Example](screenshots/postman-delete.png)
